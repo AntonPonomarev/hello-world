@@ -1,0 +1,29 @@
+{namespace try.one.someth}
+
+/**
+ * @constructor
+ * @extends spa.lApp.bPage.Template
+ */
+{template .start}
+    {call .init data="all"/}
+{/template}
+
+/**
+ * @override
+ */
+{template .body}
+    <div class="{call .rootClass/}__body">
+        <div class="{call .rootClass/}__content-wrap">
+            <div class="{call .rootClass/}__content">
+                //{call .content data="all"/}
+            </div>
+        </div>
+    </div>
+{/template}
+
+/**
+ * @override
+ */
+{template .rootClass}
+    b-test
+{/template}
